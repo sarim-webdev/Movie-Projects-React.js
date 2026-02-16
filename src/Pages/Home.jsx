@@ -6,9 +6,9 @@ const Home = () => {
       <div className="home-content">
         <h1>Unlimited Movies, TV Shows, and Exclusive Originals – All in One Place</h1>
         <p>
-          Stream your favorite films, binge-watch the latest series, and discover exclusive original content anytime, 
-          anywhere. Experience personalized recommendations, curated playlists, and seamless viewing on any device – all with a 
-          sleek, immersive interface designed for movie lovers like you.
+          Starts at Rs 250. Cancel anytime.
+          <br />
+          Ready to watch? Enter your email to create or restart your membership.
         </p>
         <button>Start Watching Now</button>
       </div>
