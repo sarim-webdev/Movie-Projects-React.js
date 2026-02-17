@@ -5,6 +5,7 @@ import Home from './Pages/Home'
 import Movies from './Pages/Movies'
 import Tvshow from './Pages/Tvshow'
 import "./App.css"
+import Footer from './Components/Footer'
 
 const App = () => {
   return (
@@ -15,6 +16,7 @@ const App = () => {
       <Route path='/movies' element={<Movies/>}></Route>
       <Route path='/tvshow' element={<Tvshow/>}></Route>
     </Routes>
+    <Footer/>
     </BrowserRouter>
   )
 }
