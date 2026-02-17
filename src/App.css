@@ -226,14 +226,14 @@ body {
   font-size: 16px;
   border: none;
   border-radius: 30px;
-  background: #8B5CF6;
-  color: black;
+  background: #e50914;
+  color: white;
   cursor: pointer;
   transition: 0.3s ease;
 }
 
 .home-content button:hover {
-  background: #8B5CF6;
+  background: #b20710;
   transform: scale(1.05);
 }
 
