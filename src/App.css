@@ -26,7 +26,7 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 0 3rem;
-background-color: transparent;
+  background-color: transparent;
   backdrop-filter: blur(0.3rem);
   box-shadow: 0 0.25rem 1.25rem rgba(0, 0, 0, 0.6);
   z-index: 1000;
@@ -419,6 +419,71 @@ background-color: transparent;
   text-align: center;
   font-size: 14px;
   color: #aaa;
+}
+
+.moviesPage {
+  padding: 40px;
+  background: #0f0f0f;
+}
+
+.movieSection {
+  margin-top: 80px;
+  margin-bottom: 40px;
+}
+
+.movieTitle {
+  color: white;
+  margin-bottom: 15px;
+  font-size: 22px;
+}
+
+.sliderWrapper {
+  position: relative;
+}
+
+.movieRow {
+  display: flex;
+  gap: 15px;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+}
+
+.movieRow::-webkit-scrollbar {
+  display: none;
+}
+
+.movieCard img {
+  width: 200px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.movieCard img:hover {
+  transform: scale(1.08);
+}
+
+.arrow {
+  position: absolute;
+  top: 40%;
+  transform: translateY(-50%);
+  background: rgba(0,0,0,0.6);
+  border: none;
+  color: white;
+  font-size: 28px;
+  padding: 10px 15px;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.left {
+  left: 0;
+}
+
+.right {
+  right: 0;
 }
 
 /* Responsive */
