@@ -11,7 +11,7 @@ import movie10 from "../assets/movie-10.jpg"
 
 /* Trending Movies */
 
-const trendingMovies = [
+const trendingCard = [
   { id: 1, image: movie1 },
   { id: 2, image: movie2 },
   { id: 3, image: movie3 },
@@ -115,20 +115,9 @@ const comedyMovies = [
   { id: 18, image: movie5 },
 ]
 
+
 export {
-  trendingMovies,
-  latestMovies,
-  featuredMovies,
-  crimeMovies,
-  actionMovies,
-  romanceMovies,
-  comedyMovies
-}
-
-/* default export */
-
-export default {
-  trendingMovies,
+  trendingCard ,
   latestMovies,
   featuredMovies,
   crimeMovies,
