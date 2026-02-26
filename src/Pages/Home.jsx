@@ -1,5 +1,5 @@
 import React, { useRef } from "react";
-import {trendingCard} from "../Data/MovieCards";
+import { trendingCard } from "../Data/MovieCards";
 
 const Home = () => {
   const scrollRef = useRef(null);
