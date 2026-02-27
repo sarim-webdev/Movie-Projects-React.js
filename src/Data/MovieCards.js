@@ -182,6 +182,120 @@ const comedyMovies = [
 ]
 
 
+
+/* =============== TV show page Data ============== */
+
+import latesttvshow1 from "../assets/latest-tvshow-1.jpg"
+import latesttvshow2 from "../assets/latest-tvshow-2.jpg"
+import latesttvshow3 from "../assets/latest-tvshow-3.jpg"
+import latesttvshow4 from "../assets/latest-tvshow-4.jpg"
+import latesttvshow5 from "../assets/latest-tvshow-5.jpg"
+import latesttvshow6 from "../assets/latest-tvshow-6.jpg"
+import latesttvshow7 from "../assets/latest-tvshow-7.jpg"
+import latesttvshow8 from "../assets/latest-tvshow-8.jpg"
+import latesttvshow9 from "../assets/latest-tvshow-9.jpg"
+import latesttvshow10 from "../assets/latest-tvshow-10.jpg"
+
+/* Anime tv show import */
+
+import animetvshow1 from "../assets/anime-tvshow-1.jpg"
+import animetvshow2 from "../assets/anime-tvshow-2.jpg"
+import animetvshow3 from "../assets/anime-tvshow-3.jpg"
+import animetvshow4 from "../assets/anime-tvshow-4.jpg"
+import animetvshow5 from "../assets/anime-tvshow-5.jpg"
+import animetvshow6 from "../assets/anime-tvshow-6.jpg"
+import animetvshow7 from "../assets/anime-tvshow-7.jpg"
+import animetvshow8 from "../assets/anime-tvshow-8.jpg"
+
+/* Crime tv show import  */
+
+import crimetvshow1 from "../assets/crime-tvshow-1.jpg"
+import crimetvshow2 from "../assets/crime-tvshow-2.jpg"
+import crimetvshow3 from "../assets/crime-tvshow-3.jpg"
+import crimetvshow4 from "../assets/crime-tvshow-4.jpg"
+import crimetvshow5 from "../assets/crime-tvshow-5.jpg"
+import crimetvshow6 from "../assets/crime-tvshow-6.jpg"
+import crimetvshow7 from "../assets/crime-tvshow-7.jpg"
+import crimetvshow8 from "../assets/crime-tvshow-8.jpg"
+import crimetvshow9 from "../assets/crime-tvshow-9.jpg"
+import crimetvshow10 from "../assets/crime-tvshow-10.jpg"
+import crimetvshow11 from "../assets/crime-tvshow-11.jpg"
+import crimetvshow12 from "../assets/crime-tvshow-12.jpg"
+
+/* Mystery tv show import */
+
+import mysterytvshow1 from "../assets/mystery-tvshow-1.jpg"
+import mysterytvshow2 from "../assets/mystery-tvshow-2.jpg"
+import mysterytvshow3 from "../assets/mystery-tvshow-3.jpg"
+import mysterytvshow4 from "../assets/mystery-tvshow-4.jpg"
+import mysterytvshow5 from "../assets/mystery-tvshow-5.jpg"
+import mysterytvshow6 from "../assets/mystery-tvshow-6.jpg"
+import mysterytvshow7 from "../assets/mystery-tvshow-7.jpg"
+import mysterytvshow8 from "../assets/mystery-tvshow-8.jpg"
+
+
+/* Latest TV - 10 */
+const latestTV = [
+  { id: 1, image: latesttvshow1 },
+  { id: 2, image: latesttvshow2 },
+  { id: 3, image: latesttvshow3 },
+  { id: 4, image: latesttvshow4 },
+  { id: 5, image: latesttvshow5 },
+  { id: 6, image: latesttvshow6 },
+  { id: 7, image: latesttvshow7 },
+  { id: 8, image: latesttvshow8 },
+  { id: 9, image: latesttvshow9 },
+  { id: 10, image: latesttvshow10 },
+]
+
+/* Anime TV - 15 */
+const animeTV = [
+  { id: 1, image: animetvshow1 },
+  { id: 2, image: animetvshow2 },
+  { id: 3, image: animetvshow3 },
+  { id: 4, image: animetvshow4 },
+  { id: 5, image: animetvshow5 },
+  { id: 6, image: animetvshow6 },
+  { id: 7, image: animetvshow7 },
+  { id: 8, image: animetvshow8 },
+]
+
+/* Crime TV - 12 */
+const crimeTV = [
+  { id: 1, image: crimetvshow1 },
+  { id: 2, image: crimetvshow2 },
+  { id: 3, image: crimetvshow3 },
+  { id: 4, image: crimetvshow4 },
+  { id: 5, image: crimetvshow5 },
+  { id: 6, image: crimetvshow6 },
+  { id: 7, image: crimetvshow7 },
+  { id: 8, image: crimetvshow8 },
+  { id: 9, image: crimetvshow9 },
+  { id: 10, image: crimetvshow10 },
+  { id: 11, image: crimetvshow11 },
+  { id: 12, image: crimetvshow12 },
+]
+
+/* Drama TV - 10 */
+const dramaTV = [...latestTV]
+
+/* Romance TV - 8 */
+const romanceTV = latestTV.slice(0, 8)
+
+/* Mystery & Thriller TV - 15 */
+const mysteryTV = [
+
+  { id: 1, image: mysterytvshow1 },
+  { id: 2, image: mysterytvshow2 },
+  { id: 3, image: mysterytvshow3 },
+  { id: 4, image: mysterytvshow4 },
+  { id: 5, image: mysterytvshow5 },
+  { id: 6, image: mysterytvshow6 },
+  { id: 7, image: mysterytvshow7 },
+  { id: 8, image: mysterytvshow8 },
+]
+
+
 export {
   trendingCard,
   latestMovies,
@@ -189,65 +303,11 @@ export {
   crimeMovies,
   actionMovies,
   romanceMovies,
-  comedyMovies
+  comedyMovies,
+  latestTV,
+  animeTV,
+  crimeTV,
+  dramaTV,
+  romanceTV,
+  mysteryTV
 }
-
-/* =============== TV show page Data ============== */
-
-import movie1 from "../assets/movie-1.jpg"
-import movie2 from "../assets/movie-2.jpg"
-import movie3 from "../assets/movie-3.jpg"
-import movie4 from "../assets/movie-4.jpg"
-import movie5 from "../assets/movie-5.jpg"
-import movie6 from "../assets/movie-6.jpg"
-import movie7 from "../assets/movie-7.jpg"
-import movie8 from "../assets/movie-8.jpg"
-import movie9 from "../assets/movie-9.jpg"
-import movie10 from "../assets/movie-10.jpg"
-
-/* Latest TV - 10 */
-export const latestTV = [
-  { id: 1, image: movie1 },
-  { id: 2, image: movie2 },
-  { id: 3, image: movie3 },
-  { id: 4, image: movie4 },
-  { id: 5, image: movie5 },
-  { id: 6, image: movie6 },
-  { id: 7, image: movie7 },
-  { id: 8, image: movie8 },
-  { id: 9, image: movie9 },
-  { id: 10, image: movie10 },
-]
-
-/* Anime TV - 15 */
-export const animeTV = [
-  ...latestTV,
-  { id: 11, image: movie1 },
-  { id: 12, image: movie2 },
-  { id: 13, image: movie3 },
-  { id: 14, image: movie4 },
-  { id: 15, image: movie5 },
-]
-
-/* Crime TV - 12 */
-export const crimeTV = [
-  ...latestTV.slice(0, 10),
-  { id: 11, image: movie6 },
-  { id: 12, image: movie7 },
-]
-
-/* Drama TV - 10 */
-export const dramaTV = [...latestTV]
-
-/* Romance TV - 8 */
-export const romanceTV = latestTV.slice(0, 8)
-
-/* Mystery & Thriller TV - 15 */
-export const mysteryTV = [
-  ...latestTV,
-  { id: 11, image: movie8 },
-  { id: 12, image: movie9 },
-  { id: 13, image: movie10 },
-  { id: 14, image: movie1 },
-  { id: 15, image: movie2 },
-]
