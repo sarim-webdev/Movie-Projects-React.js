@@ -6,6 +6,8 @@ import Movies from './Pages/Movies'
 import Tvshow from './Pages/Tvshow'
 import "./App.css"
 import Footer from './Components/Footer'
+import Login from './Pages/Auth/Login'
+import Signup from './Pages/Auth/Signup'
 
 const App = () => {
   return (
@@ -15,6 +17,8 @@ const App = () => {
       <Route path='/' element={<Home/>}></Route>
       <Route path='/movies' element={<Movies/>}></Route>
       <Route path='/tvshow' element={<Tvshow/>}></Route>
+      <Route path='/login' element={<Login/>}></Route>
+      <Route path='/signup' element={<Signup/>}></Route>
     </Routes>
     <Footer/>
     </BrowserRouter>

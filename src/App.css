@@ -46,7 +46,7 @@ body {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   cursor: pointer;
-  margin-right: 4rem;
+  margin-right: 5rem;
 }
 
 .nav-links {
@@ -72,29 +72,15 @@ body {
   gap: 1rem;
 }
 
-.search-bar {
-  padding: 0.5rem 1rem;
-  border-radius: 1.25rem;
-  border: none;
-  outline: none;
-  background-color: #1E1E1E;
-  color: white;
-  width: 12rem;
-  transition: 0.3s;
-}
-
-.search-bar:focus {
-  box-shadow: 0 0 10px rgba(79, 70, 229, 0.8);
-}
-
 .signin-btn {
   background: transparent;
   border: 0.1rem solid #8B5CF6;
   color: white;
-  padding: 0.4rem 1rem;
+  padding: 0.6rem 1.4rem;
   border-radius: 1.25rem;
   cursor: pointer;
   transition: 0.3s;
+  font-size: 1rem;
 }
 
 .signin-btn:hover {
@@ -105,10 +91,11 @@ body {
   background: #8B5CF6;
   border: none;
   color: white;
-  padding: 0.4rem 1rem;
+  padding: 0.6rem 1.4rem;
   border-radius: 1.25rem;
   cursor: pointer;
   transition: 0.3s;
+  font-size: 1rem;
 }
 
 .signup-btn:hover {
@@ -479,6 +466,105 @@ body {
 
 .right {
   right: 0;
+}
+
+/* ===== AUTH CONTAINER ===== */
+
+.auth-container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(to right, #000000, #141414);
+  padding: 20px;
+  margin-top: 2rem;
+}
+
+/* ===== AUTH CARD ===== */
+
+.auth-card {
+  background-color: #111;
+  padding: 40px;
+  width: 100%;
+  max-width: 420px;
+  border-radius: 20px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.6);
+  text-align: center;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.auth-card h1 {
+  color: #fff;
+  margin-bottom: 25px;
+  font-size: 2rem;
+}
+
+/* ===== INPUTS ===== */
+
+.auth-card input {
+  width: 100%;
+  padding: 14px 15px;
+  margin-bottom: 18px;
+  border-radius: 8px;
+  border: 1px solid #333;
+  background-color: #1c1c1c;
+  color: #fff;
+  font-size: 1rem;
+  outline: none;
+  transition: 0.3s ease;
+}
+
+.auth-card input:focus {
+  border-color: #8B5CF6;
+}
+
+/* ===== BUTTON ===== */
+
+.auth-card button {
+  width: 100%;
+  padding: 14px;
+  border-radius: 8px;
+  border: none;
+  background-color: #8B5CF6;
+  color: white;
+  font-size: 1.1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.auth-card button:hover {
+  transform: scale(1.03);
+}
+
+/* ===== LINKS ===== */
+
+.auth-card a {
+  color: #8B5CF6;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.auth-card a:hover {
+  color: #fff;
+}
+
+/* ===== ERROR MESSAGE ===== */
+
+.auth-card p {
+  margin-top: 10px;
+}
+
+/* ===== RESPONSIVE ===== */
+
+@media (max-width: 500px) {
+  .auth-card {
+    padding: 30px 20px;
+  }
+
+  .auth-card h1 {
+    font-size: 1.6rem;
+  }
 }
 
 /* Responsive */

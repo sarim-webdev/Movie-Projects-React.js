@@ -1,9 +1,17 @@
-import { NavLink } from "react-router-dom";
+import { NavLink, useNavigate } from "react-router-dom";
 import { FaUserCircle, FaBars } from "react-icons/fa";
 import { useState } from "react";
 
 const Navbar = () => {
+  const navigate = useNavigate("")
   const [mobileOpen, setMobileOpen] = useState(false);
+
+  const loginBtnHandler = () => {
+    navigate("/login")
+  }
+  const signupBtnHandler = () => {
+    navigate("/signup")
+  }
 
   return (
     <nav className="navbar">
@@ -17,14 +25,8 @@ const Navbar = () => {
       </div>
 
       <div className="right-section">
-        <input
-          type="text"
-          placeholder="Search movies..."
-          className="search-bar"
-        />
-        <button className="signin-btn">Sign In</button>
-        <button className="signup-btn">Sign Up</button>
-
+        <button className="signin-btn" onClick={loginBtnHandler}>Login</button>
+        <button className="signup-btn" onClick={signupBtnHandler}>Sign Up</button>
         <FaUserCircle className="profile-icon" />
         <FaBars
           className="mobile-menu-icon"
