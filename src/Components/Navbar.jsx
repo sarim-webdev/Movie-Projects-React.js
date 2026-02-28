@@ -9,15 +9,20 @@ const Navbar = () => {
     JSON.parse(localStorage.getItem("loggedInUser"))
   );
 
-  // Listen to changes in localStorage across tabs
+  // Listen to login event (same tab) + storage (other tabs)
   useEffect(() => {
-    const handleStorageChange = () => {
+    const updateUser = () => {
       const user = JSON.parse(localStorage.getItem("loggedInUser"));
       setLoggedInUser(user);
     };
 
-    window.addEventListener("storage", handleStorageChange);
-    return () => window.removeEventListener("storage", handleStorageChange);
+    window.addEventListener("login", updateUser);   // 👈 custom event
+    window.addEventListener("storage", updateUser); // 👈 other tabs
+
+    return () => {
+      window.removeEventListener("login", updateUser);
+      window.removeEventListener("storage", updateUser);
+    };
   }, []);
 
   const loginBtnHandler = () => navigate("/login");
@@ -25,8 +30,8 @@ const Navbar = () => {
 
   const logoutHandler = () => {
     localStorage.removeItem("loggedInUser");
-    setLoggedInUser(null); // Update state immediately
-    navigate("/"); // redirect to home
+    setLoggedInUser(null);
+    navigate("/");
   };
 
   return (
@@ -34,15 +39,9 @@ const Navbar = () => {
       <div className="left-section">
         <div className="logo">CineVerse</div>
         <ul className="nav-links">
-          <li>
-            <NavLink to="/">Home</NavLink>
-          </li>
-          <li>
-            <NavLink to="/movies">Movies</NavLink>
-          </li>
-          <li>
-            <NavLink to="/tvshow">TV Shows</NavLink>
-          </li>
+          <li><NavLink to="/">Home</NavLink></li>
+          <li><NavLink to="/movies">Movies</NavLink></li>
+          <li><NavLink to="/tvshow">TV Shows</NavLink></li>
         </ul>
       </div>
 
@@ -61,6 +60,7 @@ const Navbar = () => {
             Logout
           </button>
         )}
+
         <FaUserCircle className="profile-icon" />
         <FaBars
           className="mobile-menu-icon"
@@ -70,15 +70,9 @@ const Navbar = () => {
 
       {mobileOpen && (
         <div className="mobile-menu">
-          <NavLink to="/" onClick={() => setMobileOpen(false)}>
-            Home
-          </NavLink>
-          <NavLink to="/movies" onClick={() => setMobileOpen(false)}>
-            Movies
-          </NavLink>
-          <NavLink to="/tvshow" onClick={() => setMobileOpen(false)}>
-            TV Shows
-          </NavLink>
+          <NavLink to="/" onClick={() => setMobileOpen(false)}>Home</NavLink>
+          <NavLink to="/movies" onClick={() => setMobileOpen(false)}>Movies</NavLink>
+          <NavLink to="/tvshow" onClick={() => setMobileOpen(false)}>TV Shows</NavLink>
 
           {!loggedInUser ? (
             <>
