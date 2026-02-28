@@ -42,7 +42,7 @@ return (
     <div className='auth-container'>
         <div className='auth-card'>
             <h1>SignUp</h1>
-            {error && <p style={{color:"red",fontSize:"1.2rem"}}>{error}</p>}
+            {error && <p style={{color:"red",fontSize:"1rem",marginBottom:"1rem"}}>{error}</p>}
             <input type="name" placeholder='Usermane' value={username} onChange={(e)=> setUsername(e.target.value)} />
             <input type="email" placeholder='Email' value={email} onChange={(e)=>setEmail(e.target.value)} />
             <input type="password" placeholder='Password' value={password} onChange={(e)=> setPassword(e.target.value)} />

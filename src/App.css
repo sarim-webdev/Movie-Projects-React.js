@@ -102,6 +102,44 @@ body {
   opacity: 0.8;
 }
 
+/* Logout button - desktop */
+.logout-btn {
+  background-color: #b20710;   /* Netflix-style red */
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 8px 18px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-left: 10px;
+}
+
+.logout-btn:hover {
+  background-color: #e50914;
+  transform: scale(1.05);
+}
+
+/* Logout button - mobile menu */
+.logout-btn-mobile {
+  background-color: #b20710;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 0;
+  font-size: 1.1rem;
+  width: 100%;
+  cursor: pointer;
+  text-align: center;
+  margin-top: 10px;
+  transition: all 0.3s ease;
+}
+
+.logout-btn-mobile:hover {
+  background-color: #e50914;
+  transform: scale(1.02);
+}
+
 .profile-icon {
   font-size: 1.75rem;
   cursor: pointer;

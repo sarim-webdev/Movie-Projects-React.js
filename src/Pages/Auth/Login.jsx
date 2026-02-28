@@ -21,14 +21,14 @@ const Login = () => {
         }else{
             localStorage.setItem("loggedInUser",JSON.stringify(savedUser))
             alert("Login Successfully...")
-            navigate("/home")
+            navigate("/")
         }
     }
 return (
     <div className='auth-container'>
         <div className='auth-card'>
             <h1>Login</h1>
-            {error && <p style={{color:"red",fontSize:"1.2rem"}}>{error}</p>}
+            {error && <p style={{color:"red",fontSize:"1rem",marginBottom:"1rem"}}>{error}</p>}
             <input type="email" placeholder='Email' value={email} onChange={(e)=> setEmail(e.target.value)}/>
             <input type="password" placeholder='Password' value={password} onChange={(e)=> setPassword(e.target.value)}/>
             <button onClick={loginHandler}>Login</button>
