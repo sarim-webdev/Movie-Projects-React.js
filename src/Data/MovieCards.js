@@ -88,16 +88,16 @@ import actionmovie9 from "../assets/action-movies-9.jpg"
 import actionmovie10 from "../assets/action-movies-10.jpg"
 
 const trendingCard = [
-  { id: 1, image: trendingmovie1 },
-  { id: 2, image: trendingmovie2 },
-  { id: 3, image: trendingmovie3 },
-  { id: 4, image: trendingmovie4 },
-  { id: 5, image: trendingmovie5 },
-  { id: 6, image: trendingmovie6 },
-  { id: 7, image: trendingmovie7 },
-  { id: 8, image: trendingmovie8 },
-  { id: 9, image: trendingmovie9 },
-  { id: 10, image: trendingmovie10 },
+  { id: 1, image: trendingmovie1, title: "Tron Arees", description: "A sci-fi action film where a highly sophisticated AI program named Ares (Jared Leto) is sent from the digital world into the real world on a dangerous mission." },
+  { id: 2, image: trendingmovie2, title: "Adam Driver (65)" , description : "A sci-fi thriller starring Adam Driver as Mills, an astronaut who crash-lands on a mysterious planet, only to discover he is stranded on Earth 65 million years ago." },
+  { id: 3, image: trendingmovie3, title: "GreenLand 2", description: "Action-thriller sequel following the Garrity family (Gerard Butler, Morena Baccarin) five years after the initial comet impact."},
+  { id: 4, image: trendingmovie4, title: "Kalki", description: "A Telugu-language sci-fi epic set in a dystopian 2898 AD, 6,000 years after the Mahabharata."},
+  { id: 5, image: trendingmovie5, title: "HouseMaid", description : "A struggling young woman is relieved by the chance for a fresh start as a maid for a wealthy couple." },
+  { id: 6, image: trendingmovie6, title: "Boudica", description : "action-drama starring Olga Kurylenko as the Celtic leader who launches a brutal revenge campaign against Roman invaders." },
+  { id: 7, image: trendingmovie7, title: "Iron Lung", description: "a claustrophobic sci-fi horror film written, directed by, and starring Mark Markiplier Fischbach" },
+  { id: 8, image: trendingmovie8, title: "Love Me Love Me", description: "In a story that spans billions of years, a buoy and a satellite meet online long after humanity's extinction" },
+  { id: 9, image: trendingmovie9, title: "Twisted", description: "an R-rated neo-noir thriller following Jessica Shepard (Ashley Judd), a newly promoted San Francisco homicide inspector who specializes in cases involving men she has previously had one-night stands with" },
+  { id: 10, image: trendingmovie10, title: "Jump Street", description: "a comedy action film where Schmidt (Jonah Hill) and Jenko (Channing Tatum), two rookie cops, go undercover as high school students to break up a dangerous drug ring" },
 ]
 
 const latestMovies = [
