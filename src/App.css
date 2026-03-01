@@ -490,8 +490,9 @@ body {
   top: 40%;
   transform: translateY(-50%);
   background: rgba(0,0,0,0.6);
+  background-color: #8B5CF6;
   border: none;
-  color: #8B5CF6;
+  color: #000;
   font-size: 28px;
   padding: 10px 15px;
   cursor: pointer;

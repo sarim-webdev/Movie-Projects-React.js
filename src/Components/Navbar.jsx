@@ -9,15 +9,14 @@ const Navbar = () => {
     JSON.parse(localStorage.getItem("loggedInUser"))
   );
 
-  // Listen to login event (same tab) + storage (other tabs)
   useEffect(() => {
     const updateUser = () => {
       const user = JSON.parse(localStorage.getItem("loggedInUser"));
       setLoggedInUser(user);
     };
 
-    window.addEventListener("login", updateUser);   // 👈 custom event
-    window.addEventListener("storage", updateUser); // 👈 other tabs
+    window.addEventListener("login", updateUser);
+    window.addEventListener("storage", updateUser);
 
     return () => {
       window.removeEventListener("login", updateUser);
@@ -67,47 +66,6 @@ const Navbar = () => {
           onClick={() => setMobileOpen(!mobileOpen)}
         />
       </div>
-
-      {mobileOpen && (
-        <div className="mobile-menu">
-          <NavLink to="/" onClick={() => setMobileOpen(false)}>Home</NavLink>
-          <NavLink to="/movies" onClick={() => setMobileOpen(false)}>Movies</NavLink>
-          <NavLink to="/tvshow" onClick={() => setMobileOpen(false)}>TV Shows</NavLink>
-
-          {!loggedInUser ? (
-            <>
-              <button
-                className="signin-btn-mobile"
-                onClick={() => {
-                  loginBtnHandler();
-                  setMobileOpen(false);
-                }}
-              >
-                Login
-              </button>
-              <button
-                className="signup-btn-mobile"
-                onClick={() => {
-                  signupBtnHandler();
-                  setMobileOpen(false);
-                }}
-              >
-                Sign Up
-              </button>
-            </>
-          ) : (
-            <button
-              className="logout-btn-mobile"
-              onClick={() => {
-                logoutHandler();
-                setMobileOpen(false);
-              }}
-            >
-              Logout
-            </button>
-          )}
-        </div>
-      )}
     </nav>
   );
 };
