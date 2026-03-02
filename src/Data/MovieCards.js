@@ -235,44 +235,44 @@ import mysterytvshow8 from "../assets/mystery-tvshow-8.jpg"
 
 /* Latest TV - 10 */
 const latestTV = [
-  { id: 1, image: latesttvshow1 },
-  { id: 2, image: latesttvshow2 },
-  { id: 3, image: latesttvshow3 },
-  { id: 4, image: latesttvshow4 },
-  { id: 5, image: latesttvshow5 },
-  { id: 6, image: latesttvshow6 },
-  { id: 7, image: latesttvshow7 },
-  { id: 8, image: latesttvshow8 },
-  { id: 9, image: latesttvshow9 },
-  { id: 10, image: latesttvshow10 },
+  { id: 1, image: latesttvshow1, title: "Beast Games", description: "MrBeast Donaldson. Featuring 1,000 contestants, it is the largest cast in reality TV history, competing for a $5 million cash prize, often through physical, mental, and social challenges. " },
+  { id: 2, image: latesttvshow2, title: "Daldal", description: "An intense Hindi-language psychological crime thriller series" },
+  { id: 3, image: latesttvshow3, title: "56 Days", description: "A Prime Video psychological thriller miniseries starring Dove Cameron and Avan Jogia, following a couple whose whirlwind romance turns deadly over 56 days" },
+  { id: 4, image: latesttvshow4, title: "Steal", description: "a London office worker who becomes involved in a £4 billion pension fund heist. After thieves storm her office" },
+  { id: 5, image: latesttvshow5, title: "Fallout", description: "The residual radioactive material propelled into the upper atmosphere following a nuclear explosion, which descends back to Earth, causing contamination." },
+  { id: 6, image: latesttvshow6, title: "Bandwaale", description: "A 2026 Amazon Prime Video musical dramedy set in Rat, starring Shalini Pandey and Zahan Kapoor." },
+  { id: 7, image: latesttvshow7, title: "Cross", description: "A Prime Video thriller series starring Aldis Hodge as Alex Cross, a D.C. homicide detective and forensic psychologist solving complex murders while dealing with personal trauma." },
+  { id: 8, image: latesttvshow8, title: "Love Me", description: "A post-apocalyptic romance in which a buoy and a satellite meet online and fall in love after the end of human civilization." },
+  { id: 9, image: latesttvshow9, title: "The Night Manager", description: "A high-stakes espionage thriller based on John le Carré’s novel, following Jonathan Pine (Tom Hiddleston), a former British soldier working as a luxury hotel manager." },
+  { id: 10, image: latesttvshow10, title: "Chines", description: "A diverse mix of epic historical dramas, high-octane action thrillers, and poignant, modern character studies." },
 ]
 
 /* Anime TV - 15 */
 const animeTV = [
-  { id: 1, image: animetvshow1 },
-  { id: 2, image: animetvshow2 },
-  { id: 3, image: animetvshow3 },
-  { id: 4, image: animetvshow4 },
-  { id: 5, image: animetvshow5 },
-  { id: 6, image: animetvshow6 },
-  { id: 7, image: animetvshow7 },
-  { id: 8, image: animetvshow8 },
+  { id: 1, image: animetvshow1, title: "Ubel Blatt", description: "Japanese animated films known for stunning, detailed visuals, often featuring emotional narratives and varied, imaginative genres from fantasy to sci-fi." },
+  { id: 2, image: animetvshow2, title: "Tokyo Revengers", description: "A live-action sci-fi action film where 26-year-old loser Takemichi Hanagaki travels 12 years back in time to his high school days." },
+  { id: 3, image: animetvshow3, title: "Dororo", description: "Japanese fantasy action film based on Osamu Tezuka's manga." },
+  { id: 4, image: animetvshow4, title: "Wotakoi: Love is Hard for Otaku", description: "A live-action musical romantic comedy about Narumi, a closeted fujoshi (BL manga fan), a hardcore, handsome gaming otaku." },
+  { id: 5, image: animetvshow5, title: "Solo Leveling", description: "A dark fantasy anime series (streaming on Prime Video) focused on Köinzell, a young, skilled swordsman seeking revenge." },
+  { id: 6, image: animetvshow6, title: "Blue Lock", description: "A sports anime spin-off focusing on Seishiro Nagi's rise as a soccer prodigy within the intense Blue Lock project." },
+  { id: 7, image: animetvshow7, title: "Attack On Titan", description: "A two-part Japanese live-action adaptation where humanity hides from man-eating giants behind massive walls." },
+  { id: 8, image: animetvshow8, title: "Naruto", description: "Animated action-fantasy features expanding the universe of the popular anime." },
 ]
 
 /* Crime TV - 12 */
 const crimeTV = [
-  { id: 1, image: crimetvshow1 },
-  { id: 2, image: crimetvshow2 },
-  { id: 3, image: crimetvshow3 },
-  { id: 4, image: crimetvshow4 },
-  { id: 5, image: crimetvshow5 },
-  { id: 6, image: crimetvshow6 },
-  { id: 7, image: crimetvshow7 },
-  { id: 8, image: crimetvshow8 },
-  { id: 9, image: crimetvshow9 },
-  { id: 10, image: crimetvshow10 },
-  { id: 11, image: crimetvshow11 },
-  { id: 12, image: crimetvshow12 },
+  { id: 1, image: crimetvshow1, title: "Vadhandhi", description: "It follows Sub-Inspector Vivek (S.J. Suryah) investigating the murder of a young Anglo-Indian girl, Velonie (Sanjana), while navigating sensational rumors, media fabricatio." },
+  { id: 2, image: crimetvshow2, title: "Breathe Into The Shadow", description: "A dark psychological thriller series on Amazon Prime where Dr. Avinash Sabharwal (Abhishek Bachchan) must commit murders to rescue his kidnapped daughter, Siya" },
+  { id: 3, image: crimetvshow3, title: "Phycos Pass SS", description: "A 2019 anime film trilogy expanding the dystopian cyberpunk series" },
+  { id: 4, image: crimetvshow4, title: "Vyooham", description: "A Telugu crime thriller series on Amazon Prime Video and a political drama film directed by Ram Gopal Varma." },
+  { id: 5, image: crimetvshow5, title: "A Menina Due Matou DS Pais", description: "A 2021 Brazilian true crime psychological thriller detailing the 2002 murders of Manfred and Marísia von Richthofen." },
+  { id: 6, image: crimetvshow6, title: "PI. Menna", description: "An 8-episode Amazon Prime Video crime-thriller series set in Kolkata, following Meenakshi Meena Iyer, a young, tenacious private investigator." },
+  { id: 7, image: crimetvshow7, title: "You Are Wanted", description: "An Amazon Prime thriller series starring Matthias Schweighöfer as Lukas Franke, a Berlin hotel manager whose life turns into a nightmare when hackers destroy his digital identity." },
+  { id: 8, image: crimetvshow8, title: "Ferragnez", description: "An intimate, behind-the-scenes look into the lives of Italian influencer Chiara Ferragni and rapper Fedez" },
+  { id: 9, image: crimetvshow9, title: "Lizzo's Big Grrris", description: "An Amazon Prime Video reality competition series where music icon Lizzo searches for confident, plus-size dancers to join her 2022 tour" },
+  { id: 10, image: crimetvshow10, title: "Fan", description: "A Hindi-language psychological thriller starring Shah Rukh Khan in a dual role as superstar Aryan Khanna and his obsessive lookalike fan, Gaurav Chandna" },
+  { id: 11, image: crimetvshow11, title: "Tom Green I Get A Mule", description: "A 2025 stand-up comedy special released on Prime Video where comedian Tom Green reflects on his life, career, and unconventional adventures" },
+  { id: 12, image: crimetvshow12, title: "Wedding.com", description: "A true-crime documentary series on Amazon Prime Video that investigates the disturbing rise of matrimonial fraud in India." },
 ]
 
 /* Drama TV - 10 */
