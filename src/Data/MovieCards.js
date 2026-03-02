@@ -284,14 +284,14 @@ const romanceTV = latestTV.slice(0, 8)
 /* Mystery & Thriller TV - 15 */
 const mysteryTV = [
 
-  { id: 1, image: mysterytvshow1 },
-  { id: 2, image: mysterytvshow2 },
-  { id: 3, image: mysterytvshow3 },
-  { id: 4, image: mysterytvshow4 },
-  { id: 5, image: mysterytvshow5 },
-  { id: 6, image: mysterytvshow6 },
-  { id: 7, image: mysterytvshow7 },
-  { id: 8, image: mysterytvshow8 },
+  { id: 1, image: mysterytvshow1 , title: "The Vampire Diaries", description: "A popular supernatural teen drama series (not a movie) set in Mystic Falls, Virginia." },
+  { id: 2, image: mysterytvshow2 , title: "Supernatural", description: "A long-running TV series (often binged as a movie saga) following brothers Sam and Dean Winchester as they hunt demons, ghosts, and monsters across America." },
+  { id: 3, image: mysterytvshow3 , title: "The Mentalist", description: "Crime drama series (2008–2015) starring Simon Baker as Patrick Jane, a former celebrity psychic turned independent consultant for the California Bureau of Investigation (CBI)." },
+  { id: 4, image: mysterytvshow4 , title: "The Man High Castle", description: "A dystopian sci-fi series based on Philip K. Dick’s novel, depicting a 1962 alternate history where the Axis powers won WWII" },
+  { id: 5, image: mysterytvshow5 , title: "A Ruthless Cruel Intentions", description: "A provocative teen drama following wealthy, manipulative step-siblings Kathryn Merteuil and Sebastian Valmont, who play cruel games of seduction and deceit within New York's elite prep scene." },
+  { id: 6, image: mysterytvshow6 , title: "Guilty Minds", description: "Including the Blue Whale challenge#MeToo, and AI, while navigating their complicated personal relationship." },
+  { id: 7, image: mysterytvshow7 , title: "Dahaad", description: "An 8-episode Hindi-language crime thriller series on Amazon Prime Video that follows Sub-inspector Anjali Bhaati (Sonakshi Sinha)" },
+  { id: 8, image: mysterytvshow8 , title: "Nine Perfect Stangers", description: "A psychological drama based on Liane Moriarty's novel, where nine stressed city dwellers, including a novelist (Nicole Kidman) and her guests." },
 ]
 
 

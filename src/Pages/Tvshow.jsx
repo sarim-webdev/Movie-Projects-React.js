@@ -41,6 +41,10 @@ const TVRow = ({ title, data }) => {
           {data.map((item) => (
             <div className="movieCard" key={item.id}>
               <img src={item.image} alt="" />
+              <div className="movie-info">
+                <h3>{item.title}</h3>
+                <p>{item.description}</p>
+              </div>
             </div>
           ))}
         </div>
