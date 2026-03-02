@@ -1,5 +1,5 @@
 import { NavLink, useNavigate } from "react-router-dom";
-import { FaUserCircle, FaBars } from "react-icons/fa";
+import { FaUserCircle, FaBars, FaHome, FaFilm, FaTv } from "react-icons/fa";
 import { useState, useEffect } from "react";
 
 const Navbar = () => {
@@ -24,23 +24,35 @@ const Navbar = () => {
     };
   }, []);
 
-  const loginBtnHandler = () => navigate("/login");
-  const signupBtnHandler = () => navigate("/signup");
+  const loginBtnHandler = () => {
+    setMobileOpen(false);
+    navigate("/login");
+  };
+  
+  const signupBtnHandler = () => {
+    setMobileOpen(false);
+    navigate("/signup");
+  };
 
   const logoutHandler = () => {
     localStorage.removeItem("loggedInUser");
     setLoggedInUser(null);
+    setMobileOpen(false);
     navigate("/");
+  };
+
+  const handleNavClick = () => {
+    setMobileOpen(false);
   };
 
   return (
     <nav className="navbar">
       <div className="left-section">
-        <div className="logo">CineVerse</div>
+        <div className="logo" onClick={() => navigate("/")}>CineVerse</div>
         <ul className="nav-links">
-          <li><NavLink to="/">Home</NavLink></li>
-          <li><NavLink to="/movies">Movies</NavLink></li>
-          <li><NavLink to="/tvshow">TV Shows</NavLink></li>
+          <li><NavLink to="/" onClick={handleNavClick}>Home</NavLink></li>
+          <li><NavLink to="/movies" onClick={handleNavClick}>Movies</NavLink></li>
+          <li><NavLink to="/tvshow" onClick={handleNavClick}>TV Shows</NavLink></li>
         </ul>
       </div>
 
@@ -66,6 +78,23 @@ const Navbar = () => {
           onClick={() => setMobileOpen(!mobileOpen)}
         />
       </div>
+
+      {/* Mobile Menu - Ab yeh properly dikhega */}
+      {mobileOpen && (
+        <div className="mobile-menu">
+          <NavLink to="/" onClick={handleNavClick}>
+            <FaHome style={{ marginRight: '10px' }} /> Home
+          </NavLink>
+          <NavLink to="/movies" onClick={handleNavClick}>
+            <FaFilm style={{ marginRight: '10px' }} /> Movies
+          </NavLink>
+          <NavLink to="/tvshow" onClick={handleNavClick}>
+            <FaTv style={{ marginRight: '10px' }} /> TV Shows
+          </NavLink>
+          
+          <div className="mobile-divider"></div>
+        </div>
+      )}
     </nav>
   );
 };

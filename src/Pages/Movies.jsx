@@ -28,11 +28,9 @@ const MovieRow = ({ title, data }) => {
 
   return (
     <div className="movieSection">
-
       <h2 className="movieTitle">{title}</h2>
 
       <div className="sliderWrapper">
-
         <button className="arrow left" onClick={scrollLeft}>
           ◀
         </button>
@@ -40,7 +38,11 @@ const MovieRow = ({ title, data }) => {
         <div className="movieRow" ref={rowRef}>
           {data.map((movie) => (
             <div className="movieCard" key={movie.id}>
-              <img src={movie.image} alt="" />
+              <img src={movie.image} alt={movie.title} />
+              <div className="movie-info">
+                <h3>{movie.title}</h3>
+                <p>{movie.description}</p>
+              </div>
             </div>
           ))}
         </div>
@@ -48,7 +50,6 @@ const MovieRow = ({ title, data }) => {
         <button className="arrow right" onClick={scrollRight}>
           ▶
         </button>
-
       </div>
     </div>
   );
@@ -57,25 +58,12 @@ const MovieRow = ({ title, data }) => {
 const Movies = () => {
   return (
     <div className="moviesPage">
-
       <MovieRow title="Latest Movies" data={latestMovies} />
-
-      <MovieRow
-        title="Featured Originals and Exclusives"
-        data={featuredMovies}
-      />
-
+      <MovieRow title="Featured Originals and Exclusives" data={featuredMovies} />
       <MovieRow title="Crime Movies" data={crimeMovies} />
-
-      <MovieRow
-        title="Action and Adventure Movies"
-        data={actionMovies}
-      />
-
+      <MovieRow title="Action and Adventure Movies" data={actionMovies} />
       <MovieRow title="Romance Movies" data={romanceMovies} />
-
       <MovieRow title="Comedy Movies" data={comedyMovies} />
-
     </div>
   );
 };
