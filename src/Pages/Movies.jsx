@@ -42,6 +42,7 @@ const MovieRow = ({ title, data }) => {
               <div className="movie-info">
                 <h3>{movie.title}</h3>
                 <p>{movie.description}</p>
+                <button>{movie.btn}</button>
               </div>
             </div>
           ))}

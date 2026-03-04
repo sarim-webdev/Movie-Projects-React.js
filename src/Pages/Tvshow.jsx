@@ -44,6 +44,7 @@ const TVRow = ({ title, data }) => {
               <div className="movie-info">
                 <h3>{item.title}</h3>
                 <p>{item.description}</p>
+                <button>{item.btn}</button>
               </div>
             </div>
           ))}
