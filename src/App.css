@@ -511,7 +511,7 @@ body {
   align-items: center;
   background: linear-gradient(rgba(0, 0, 0, 0.4),
       rgba(0, 0, 0, 0.4)),
-    url("./assets/hero-background-image.jpg");
+    url("./assets/hero-background-image.webp");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
